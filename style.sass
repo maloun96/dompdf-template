@@ -1,0 +1,219 @@
+$border-black: 1px solid black;
+
+.pdf-body {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 12px;
+
+  p {
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .full-width {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+
+  .half-left {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+
+  .half-right {
+    @extend .half-left;
+    float: right;
+  }
+
+  .subtitle {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0em;
+    font-weight: bold;
+  }
+
+  .title {
+    display: block;
+    width: 100%;
+    font-size: 23px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .order-nr {
+    font-size: 18px;
+  }
+
+  .logo {
+    float: right;
+    width: 155px;
+    margin: 10px 0 0 0;
+  }
+
+  .separator {
+    margin: 15px 0;
+    clear: both;
+    float: none;
+    height: 1px;
+    background: black;
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+
+
+  .pdf-header {
+    position: fixed;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+    height: 250px;
+  }
+
+  .pdf-footer {
+    position: fixed;
+    bottom: -70px;
+    left: 0px;
+    right: 0px;
+    border-top: $border-black;
+    height: 50px;
+    padding: 10px 0;
+
+    table {
+      width: 100%;
+      td {
+        vertical-align: top;
+      }
+    }
+
+    .page {width: 50%;}
+    .footer-logo-wrapper {
+      width: 126px;
+      .footer-logo {
+        width: 100px;
+        img {
+          margin: 5px 0 0 0;
+          padding: 0;
+          width: 125px;
+        }
+      }
+    }
+  }
+
+  .pdf-template {
+
+
+    .ship-to {
+      overflow: hidden;
+      border-right: $border-black;
+    }
+
+    .manufacturer {
+      span {
+        display: inline-block;
+      }
+
+      .text-bold {
+        width: 120px;
+        text-align: right;
+      }
+    }
+
+    table {
+      margin: 15px 0 0 0;
+      width: 100%;
+
+      thead {
+        border-top: $border-black;
+        border-bottom: $border-black;
+
+        th {
+          padding: 10px 0;
+        }
+      }
+
+      tbody {
+        .border-row {
+          height: 1px;
+          background: black;
+          width: 100%;
+        }
+
+        td {
+          padding: 10px 0;
+        }
+      }
+
+      .image-td {
+        width: 10%;
+
+        img {
+          max-width: 80px;
+        }
+      }
+
+      .description-td {
+        width: 40%;
+      }
+
+      .quantity {
+        width: 13%;
+      }
+
+      .unit {
+        width: 10%;
+      }
+
+      .unit-price-td {
+        width: 12%;
+      }
+
+      .total-price-td {
+        width: 18%;
+      }
+
+      td {
+        vertical-align: top;
+      }
+    }
+
+    .notes {
+      //width: 50%;
+    }
+
+    .total-wrapper {
+      .total {
+        float: right;
+
+        p {
+          display: block;
+          padding: 3px 0;
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          .name {
+            display: inline-block;
+            text-align: right;
+            width: 80px;
+          }
+
+          .value {
+            width: 80px;
+            display: inline-block;
+            text-align: right;
+          }
+
+          &.total-price {
+            font-weight: bold;
+            border-top: $border-black;
+          }
+        }
+      }
+    }
+  }
+}
