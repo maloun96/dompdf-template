@@ -1,0 +1,208 @@
+.pdf-body {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 12px;
+}
+
+.pdf-body p {
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pdf-body .full-width {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.pdf-body .half-left,
+.pdf-body .half-right {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.pdf-body .half-right {
+  float: right;
+}
+
+.pdf-body .subtitle {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0em;
+  font-weight: bold;
+}
+
+.pdf-body .title {
+  display: block;
+  width: 100%;
+  font-size: 23px;
+  letter-spacing: 0em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pdf-body .order-nr {
+  font-size: 18px;
+}
+
+.pdf-body .logo {
+  float: right;
+  width: 155px;
+  margin: 10px 0 0 0;
+}
+
+.pdf-body .separator {
+  margin: 15px 0;
+  clear: both;
+  float: none;
+  height: 1px;
+  background: black;
+}
+
+.pdf-body .text-bold {
+  font-weight: bold;
+}
+
+.pdf-body .pdf-header {
+  position: fixed;
+  top: -100px;
+  left: 0px;
+  right: 0px;
+  height: 250px;
+}
+
+.pdf-body .pdf-footer {
+  position: fixed;
+  bottom: -70px;
+  left: 0px;
+  right: 0px;
+  border-top: 1px solid black;
+  height: 50px;
+  padding: 10px 0;
+}
+
+.pdf-body .pdf-footer table {
+  width: 100%;
+}
+
+.pdf-body .pdf-footer table td {
+  vertical-align: top;
+}
+
+.pdf-body .pdf-footer .page {
+  width: 50%;
+}
+
+.pdf-body .pdf-footer .footer-logo-wrapper {
+  width: 126px;
+}
+
+.pdf-body .pdf-footer .footer-logo-wrapper .footer-logo {
+  width: 100px;
+}
+
+.pdf-body .pdf-footer .footer-logo-wrapper .footer-logo img {
+  margin: 5px 0 0 0;
+  padding: 0;
+  width: 125px;
+}
+
+.pdf-body .pdf-template .ship-to {
+  overflow: hidden;
+  border-right: 1px solid black;
+}
+
+.pdf-body .pdf-template .manufacturer span {
+  display: inline-block;
+}
+
+.pdf-body .pdf-template .manufacturer .text-bold {
+  width: 120px;
+  text-align: right;
+}
+
+.pdf-body .pdf-template table {
+  margin: 15px 0 0 0;
+  width: 100%;
+}
+
+.pdf-body .pdf-template table thead {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.pdf-body .pdf-template table thead th {
+  padding: 10px 0;
+}
+
+.pdf-body .pdf-template table tbody .border-row {
+  height: 1px;
+  background: black;
+  width: 100%;
+}
+
+.pdf-body .pdf-template table tbody td {
+  padding: 10px 0;
+}
+
+.pdf-body .pdf-template table .image-td {
+  width: 10%;
+}
+
+.pdf-body .pdf-template table .image-td img {
+  max-width: 80px;
+}
+
+.pdf-body .pdf-template table .description-td {
+  width: 40%;
+}
+
+.pdf-body .pdf-template table .quantity {
+  width: 13%;
+}
+
+.pdf-body .pdf-template table .unit {
+  width: 10%;
+}
+
+.pdf-body .pdf-template table .unit-price-td {
+  width: 12%;
+}
+
+.pdf-body .pdf-template table .total-price-td {
+  width: 18%;
+}
+
+.pdf-body .pdf-template table td {
+  vertical-align: top;
+}
+
+.pdf-body .pdf-template .total-wrapper .total {
+  float: right;
+}
+
+.pdf-body .pdf-template .total-wrapper .total p {
+  display: block;
+  padding: 3px 0;
+}
+
+.pdf-body .pdf-template .total-wrapper .total p:first-child {
+  padding-top: 0;
+}
+
+.pdf-body .pdf-template .total-wrapper .total p .name {
+  display: inline-block;
+  text-align: right;
+  width: 80px;
+}
+
+.pdf-body .pdf-template .total-wrapper .total p .value {
+  width: 80px;
+  display: inline-block;
+  text-align: right;
+}
+
+.pdf-body .pdf-template .total-wrapper .total p.total-price {
+  font-weight: bold;
+  border-top: 1px solid black;
+}
